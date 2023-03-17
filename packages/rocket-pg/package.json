@@ -1,0 +1,19 @@
+{
+  "name": "rocket-pg",
+  "version": "1.0.0",
+  "description": "Lightweight PostgreSQL client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc ./src/client.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.3"
+  },
+  "dependencies": {
+    "pg": "^8.10.0",
+    "typescript": "^5.0.2"
+  }
+}
