@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Lightweight Backend NodeJS Framework",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:all": "nx run-many --target=test --all",
+    "build:all": "nx run-many --target=build --all",
+    "lint:all": "nx run-many --target=lint --all"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/ptfpinho23/RocketJs/issues"
   },
-  "homepage": "https://github.com/ptfpinho23/RocketJs#readme"
+  "homepage": "https://github.com/ptfpinho23/RocketJs#readme",
+  "dependencies": {
+    "nx": "^15.8.6"
+  },
+  "devDependencies": {
+    "nx": "15.8.6",
+    "@nrwl/nx-cloud": "latest"
+  }
 }
